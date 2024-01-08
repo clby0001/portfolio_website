@@ -1,0 +1,543 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #f3eadf;
+}
+
+main {
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* LOGO */
+.logo img {
+  width: 70px;
+  height: auto;
+  padding-top: 10px;
+  padding-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+/* HEADER OG MENU */
+.menu a {
+  text-decoration: none; /* Fjerner understregning fra links */
+  color: black;
+  padding-right: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+header {
+  gap: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header ul {
+  display: flex;
+  margin: 0;
+  list-style: none;
+  justify-content: right;
+  gap: 30px;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+/* STARTSKÆRM */
+.red-square {
+  background-color: #73020c;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+
+  /* width: 54%; */
+  /* height: 82%; */
+  box-sizing: border-box;
+}
+.sub-text {
+  font-family: "Inter", sans-serif; /* Foretrukne skrifttype */
+  font-size: 1rem; /* Skriftstørrelse */
+  font-weight: bold; /* Gør teksten fed */
+  text-transform: uppercase; /* Store bogstaver */
+  color: #ff0000; /* Tekstfarve */
+  background-color: transparent; /* Gennemsigtig baggrund */
+  display: grid;
+  place-content: end center;
+  cursor: pointer; /* Håndcursor for at indikere klikbarhed */
+  white-space: nowrap; /* Sikrer at teksten ikke brydes over flere linjer */
+  z-index: 10; /* Sørger for at teksten er over andre elementer */
+}
+.sub-text:hover {
+  color: black; /* Tekstfarve ændres til sort ved hover */
+}
+
+.start_grid {
+  display: grid;
+  grid-template-columns: 5fr 6fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+/* PORTFOLIO teksten positionering */
+.portfolio {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  font-family: "Tenor Sans", sans-serif;
+  background: transparent;
+  color: #f20505;
+  font-size: 9.3rem;
+  z-index: 2;
+}
+
+/* CLARA BYRIEL TEKST I RØD FIRKANT*/
+.name {
+  width: 100%;
+  padding-top: 200px;
+  background-color: #73020c;
+}
+
+.name span {
+  font-family: "Londrina Shadow", sans-serif;
+  display: block;
+  color: #f20505;
+  font-size: 10rem; /* Skriftstørrelse relativ til højden af viewporten */
+  line-height: 1.2; /* Justerer afstanden mellem linjerne */
+  background-color: initial;
+}
+.name2 {
+  padding-top: 200px;
+  background-color: #73020c;
+}
+.name2 span {
+  font-family: "Londrina Shadow", sans-serif;
+  display: block;
+  color: #f20505;
+  font-size: 8rem; /* Skriftstørrelse relativ til højden af viewporten */
+  line-height: 1.2; /* Justerer afstanden mellem linjerne */
+  background-color: #73020c;
+}
+
+/* GRID PÅ FORSIDE */
+.grid1,
+.grid2,
+.grid3,
+.grid4,
+.grid5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+  gap: 30px;
+  margin-top: 20px; /* Tilføj yderligere margin-top om nødvendigt */
+  margin-bottom: 90px;
+}
+.max_w {
+  margin-top: 200px;
+  max-width: 1000px;
+  width: 100%; /* Sørger for at containeren tager hele bredden */
+  margin-inline: auto;
+}
+.grid5 img {
+  width: 60%; /* eller en specifik bredde, f.eks. 200px */
+  height: auto; /* beholder billedets aspektforhold */
+}
+
+/* GRIDS OG STYLING PÅ WEB */
+.grid_3_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+}
+.grid_3_4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.grid_3_1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+  margin-top: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.grid_3_3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  margin: 10% 50px;
+}
+.order {
+  order: -2;
+}
+
+h3 {
+  font-family: "Tenor Sans", sans-serif;
+  color: #f20505;
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.web {
+  place-content: end center;
+  display: grid;
+}
+
+.web_knap {
+  border: 3px solid #f20505;
+  text-decoration: none;
+  color: #f20505;
+  padding: 20px;
+  display: inline-block;
+  font-family: "Tenor Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* UX/UI STYLING OG GRIDS */
+.web2 {
+  place-content: end center;
+  display: grid;
+}
+.grid_2_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+  gap: 20px;
+  margin: 5% 50px;
+}
+
+/* ANIMATION STYLING OG GRIDS */
+
+.grid_4_1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 20px;
+}
+
+.grid_4_4 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+  margin-top: 10%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.grid_4_6 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+  margin-top: 5%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.grid_4_2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.grid_4_3 {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 50px;
+  margin-top: 60%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.grid_4_5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+/* VIDEO OG DESIGN PÅ 05 INDHOLD */
+.video-container {
+  display: flex; /* Bruger flexbox til at centrere videoen */
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 16/9;
+  position: relative;
+
+  margin: 40px;
+}
+
+.responsive {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+/* OM MIG LAYOUT */
+
+.ommigtekts {
+  font-family: "Londrina Shadow", sans-serif;
+  display: block;
+  color: #f20505;
+  font-size: 7rem;
+}
+
+@keyframes rulleAnimation {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.rulletekst {
+  font-family: "Londrina Shadow", sans-serif;
+  color: #f20505;
+  font-size: 3rem;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  animation: rulleAnimation 20s linear infinite;
+}
+.omknap {
+  text-align: center;
+}
+
+.om_knap {
+  border: 3px solid #f20505;
+  text-decoration: none;
+  color: #f20505;
+  padding: 20px;
+  display: inline-block;
+  font-family: "Tenor Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Omordner elementer i grid_4_3, hvis nødvendigt */
+.order {
+  order: -1;
+}
+
+/* Mediequery for større skærme */
+@media (min-width: 800px) {
+  .grid_4_3 {
+    margin: 0px 0px;
+  }
+  .grid_4_2 {
+    margin-top: 100px;
+  }
+}
+
+/* BILLEDER TRANSISTION FORSIDE */
+.max_w img {
+  transition: all 0.3s ease;
+}
+
+.max_w img:hover {
+  transform: scale(1.1);
+}
+
+/* TEKST I GRID */
+.h3 {
+  font-family: "Tenor Sans", sans-serif;
+  color: #f20505;
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+  padding-top: 10%;
+}
+.knap a {
+  text-decoration: none; /* Fjerner understregning fra links */
+  color: #333;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  list-style: none;
+}
+.knap ul {
+  list-style: none;
+  padding-top: 20px;
+}
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* FOOTER*/
+footer {
+  font-family: "Tenor Sans", sans-serif;
+  color: #f20505;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+footer .menu a {
+  text-decoration: none;
+  color: #f20505;
+}
+footer .menu {
+  list-style-type: none;
+  padding-top: 20px;
+}
+footer .menu li {
+  margin-bottom: 10px;
+}
+
+/* BURGERMENU */
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .portfolio {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .logo {
+    width: auto;
+    height: auto;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav {
+    z-index: 100;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #f8f6ef;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+
+  .grid1,
+  .grid2,
+  .grid3,
+  .grid4,
+  .grid5 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .img_container {
+    order: 2;
+  }
+
+  .portfolio {
+    font-size: 4rem;
+  }
+
+  .name span {
+    font-size: 4rem;
+  }
+  .name2 span {
+    font-size: 4rem;
+  }
+
+  .grid_3_3 {
+    grid-template-columns: 1fr;
+  }
+
+  .sub-text {
+    display: none;
+  }
+
+  .web {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 10px;
+  }
+  .web2 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 10px;
+  }
+
+  .grid_3_1 {
+    grid-template-columns: 1fr;
+  }
+
+  .order_small {
+    order: -3;
+  }
+
+  .grid_4_1 {
+    /* Yderligere stilarter for større skærme, hvis nødvendigt */
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px 50px; /* Justerer margen for større skærme */
+  }
+
+  .grid_2_2 {
+    grid-template-columns: 1fr;
+  }
+
+  .video {
+    height: 200px;
+  }
+}
